@@ -162,6 +162,24 @@ if(${MCUX_DEVICE} STREQUAL "LPC55S06")
 
 endif()
 
+if(${MCUX_DEVICE} STREQUAL "LPC55S36")
+    list(APPEND CMAKE_MODULE_PATH
+        ${CMAKE_CURRENT_LIST_DIR}/devices/LPC55S36
+    )
+
+    include(all_lib_device_LPC55S36)
+
+endif()
+
+if(${MCUX_DEVICE} STREQUAL "LPC5536")
+    list(APPEND CMAKE_MODULE_PATH
+        ${CMAKE_CURRENT_LIST_DIR}/devices/LPC5536
+    )
+
+    include(all_lib_device_LPC5536)
+
+endif()
+
 if(${MCUX_DEVICE} STREQUAL "MKV11Z7")
     list(APPEND CMAKE_MODULE_PATH
         ${CMAKE_CURRENT_LIST_DIR}/devices/MKV11Z7
